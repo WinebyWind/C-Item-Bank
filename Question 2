@@ -16,4 +16,5 @@
       if(fac(g)+fac(s)+fac(b)==i)
           printf("%d!+%d!+%d!=%d\n",b,s,g,i);
    }
+   return 0;
 }
