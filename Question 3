@@ -1,0 +1,11 @@
+# include <stdio.h>
+int main()
+{  
+  int n;
+  float t=0 ,s=2,k=1,m;
+  for(n=1;n<=20;n++){
+     t=t+s/k;
+     m=s; s=s+k;k=m;}
+     printf("%f\n",t);
+     return 0;   
+}
