@@ -1,0 +1,18 @@
+# include <stdio.h>
+int main()
+{ 
+  int i,a[10];
+  float s,j=0,k=0;
+  printf("请输入10个数：\n");
+  for(i=0;i<10;i++)
+    scanf("%d",&a[i]);
+  for(i=0;i<10;i++){
+    if(a[i]%2!=0){
+      j=j+a[i];
+      k=k+1;
+    }
+  }
+  s=j/k;
+  printf("这10个数中奇数和为：%1.0f\n这10个数中奇数的平均值为：%5.2f\n",j,s);
+  return 0;
+}
