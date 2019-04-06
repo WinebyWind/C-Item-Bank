@@ -1,0 +1,18 @@
+# include <stdio.h>
+#define M 100
+int  main()
+{ 
+   int i,n;
+   char a[M];
+   printf("请输入一列字符串:");
+   for(i=1;i<M;i++){
+      scanf("%c",&a[i]);
+      if(a[i]=='\n') break;
+   }
+   printf("则该列字符串中去除小写元音字母后输出为：");
+   for(n=1;n<=i;n++){
+      if((a[n]!=97)&(a[n]!=101)&(a[n]!=105)&(a[n]!=111)&(a[n]!=117))
+      printf("%c",a[n]); 
+   }
+   return 0;
+ }
