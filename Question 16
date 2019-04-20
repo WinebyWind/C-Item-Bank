@@ -1,0 +1,24 @@
+#include<stdio.h>
+#include<math.h>
+double jiecheng(double a)
+{
+   int i;    
+	 double t=1;
+   for(i=0;i<a;i++)
+	   t=t*(a-i);
+   return(t);
+}
+
+int main()
+{	
+  double jiecheng(double a);
+	double i,t=1;
+	for(i=1;;i++){
+	  if(1/jiecheng(i)<0.000001)	
+      break;
+	  t=t+1/jiecheng(i);	
+  }
+	printf("%f\n",t);
+  return 0;
+}
+
