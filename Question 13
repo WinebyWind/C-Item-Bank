@@ -1,0 +1,12 @@
+#include<stdio.h>
+int main()
+{
+  int i;
+  printf("    0~1000中同时能被7和13整除的数为：\n");
+  for(i=0;i<=1000;i++){
+    if((i%7==0)&&(i%13==0))
+      printf("%5d",i);
+  }
+  getch();
+  return 0;
+}
